@@ -33,4 +33,10 @@
 			return $this->db->insert('posts', $data);
 		}
 
+		public function delete_post($id) {
+			$this->db->where('id', $id); // find post where 'id' is equal to '$id'
+			$this->db->delete('posts'); // delete the post ID you've found above, from tbl 'posts'
+			return true;
+		}
+
 	}
