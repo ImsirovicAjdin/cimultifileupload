@@ -6,4 +6,7 @@
 	<small class="badge badge-primary d-incline-block">Posted on: <?php echo $post['created_at']; ?></small><br>
 	<?php echo $post['body']; ?>
 	<p><a class="btn btn-success" href="<?= site_url('/posts/'.$post['slug']) ; ?>">Read More</a></p>
-<?php endforeach; ?>
+<?php endforeach; 
+
+// https://stackoverflow.com/questions/17079711/what-is-the-difference-between-site-url-and-base-url
+?>
