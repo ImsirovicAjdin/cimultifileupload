@@ -23,3 +23,12 @@ Write sql query to paste 2 posts into the database:
 		'Ne obra se bostan dok sljive ne popadaju',
 		CURRENT_TIMESTAMP
 	)
+
+How does the $data variable behave?
+===================================
+
+It seems that the $data variable inside a controller (like Posts.php), takes
+one array member, 'post' in this case; We can print_r it from inside the controller. But in a view, the $data
+variable is unknown, unavailable. Instead, we have the $post variable, and we can print_r the $post variable. In the 
+next commit, I'll rename the $data['post'] = ... to $data['whatevs'] in the CONTROLLER, then try to print_r $whatevs in the view,
+to see what happens

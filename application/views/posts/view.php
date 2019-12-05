@@ -9,3 +9,10 @@
 <div class="d-block p-2">
 	<?= $post['body']; ?>
 </div>
+
+<pre>
+<?php
+// print_r($data['post']); // throws: undefined variable: data
+print_r($post);
+?>
+</pre>
