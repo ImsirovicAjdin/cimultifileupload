@@ -61,7 +61,7 @@ class Posts extends CI_Controller {
 		$data['title'] = 'Edit Post';
 
 		$this->load->view('templates/header');
-		$this->load->view('posts/edit', $data;);
+		$this->load->view('posts/edit', $data);
 		$this->load->view('templates/footer');
 	}
 
