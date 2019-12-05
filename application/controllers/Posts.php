@@ -45,6 +45,10 @@ class Posts extends CI_Controller {
 
 	}
 
+	public function delete($id) {
+		echo $id; // we're checking if the parameter is received correctly
+	}
+
 }
 /*
 
