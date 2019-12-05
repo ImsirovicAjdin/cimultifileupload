@@ -68,6 +68,7 @@ class Posts extends CI_Controller {
 	public function update() {
 		// echo 'SUBMITTED';
 		$this->post_model->update_post(); // in the controller we're calling our model's method: update_post() - and now we need to define it in the model
+		redirect('posts');
 	}
 
 }
