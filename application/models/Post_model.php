@@ -17,6 +17,8 @@
 			return $query->row_array();
 		}
 
+		
+		// Insert values from $_POST from posts/create to DB using CI's active record
 		public function create_post(){
 			$slug = url_title($this->input->post('title')); // this is how we get the form values
 			// and we want the value of title - so we're just wrapping the ('title') in this
