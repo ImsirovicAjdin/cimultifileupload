@@ -15,3 +15,6 @@
 print_r($post);
 ?>
 </pre>
+<?php echo form_open('/posts/delete/'.$post['id']); ?> <!-- this post will submit to /posts/delete/   controller/action   -->
+<input type="submit" value="delete" class="btn btn-danger">
+</form>
