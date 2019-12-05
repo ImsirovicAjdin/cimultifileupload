@@ -32,3 +32,8 @@ one array member, 'post' in this case; We can print_r it from inside the control
 variable is unknown, unavailable. Instead, we have the $post variable, and we can print_r the $post variable. In the 
 next commit, I'll rename the $data['post'] = ... to $data['whatevs'] in the CONTROLLER, then try to print_r $whatevs in the view,
 to see what happens
+
+Ok, so it's obvious that $data['post'] in the controller, becomes just $post in the view
+========================================================================================
+
+Just like the $data['whatevs'] in the controller, becomes $whatevs in the view that I'm updating right now.
