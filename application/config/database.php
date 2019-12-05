@@ -94,3 +94,33 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+/*
+Import this DB into phpmyadmin:
+
+# CREATE DATABASE `multifileupload`;
+
+# USE `multifileupload`;
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `slug` varchar(255) NOT NULL,
+  `body` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `posts` (`id`, `title`, `slug`, `body`, `created_at`) VALUES
+(1, 'Post One', 'post-one', 'Lorem ipsum dolor sit consectetur adipiscing elit', '2019-04-11 19:39:34'),
+(2, 'Post Two', 'post-two', 'Ne obra se bostan dok sljive ne popadaju', '2019-04-11 19:39:34');
+
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+
+*/
+
