@@ -40,6 +40,7 @@ class Posts extends CI_Controller {
 		}else{
 			$this->post_model->create_post();
 			$this->load->view('posts/success');
+			redirect('posts');
 		}
 
 	}
