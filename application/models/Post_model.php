@@ -39,4 +39,8 @@
 			return true;
 		}
 
+		public function update_post() {
+			echo $this->input->post('id');die();
+		}
+
 	}
