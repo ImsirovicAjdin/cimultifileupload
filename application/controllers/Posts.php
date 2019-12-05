@@ -5,7 +5,7 @@ class Posts extends CI_Controller {
 
 		$data['posts'] = $this->post_model->get_posts(); // lowercase on post_model MUST BE!!!
 
-		print_r($data['posts']);
+		// print_r($data['posts']); it WORKS, we know we're passing data along into the $data variable
 
 		$this->load->view('templates/header');
 		$this->load->view('posts/index', $data);
