@@ -5,6 +5,8 @@ class Posts extends CI_Controller {
 
 		$data['posts'] = $this->post_model->get_posts(); // lowercase on post_model MUST BE!!!
 
+		print_r($data['posts']);
+
 		$this->load->view('templates/header');
 		$this->load->view('posts/index', $data);
 		$this->load->view('templates/footer');

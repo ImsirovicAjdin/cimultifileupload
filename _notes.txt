@@ -1,0 +1,25 @@
+Using print_r on the $data['posts'] array
+=========================================
+
+We'll print_r the ($data['posts']) array - it will show above the navbar.
+
+Maybe the db is empty, and thus we can't print_r($data['posts']), so:
+
+Write sql query to paste 2 posts into the database:
+
+	INSERT INTO `posts` (`id`, `title`, `slug`, `body`, `created_at`)
+	VALUES
+	(
+		NULL,
+		'Post One',
+		'post-one',
+		'Lorem ipsum dolor sit consectetur adipiscing elit',
+		CURRENT_TIMESTAMP
+	),
+	(
+		NULL,
+		'Post Two',
+		'post-two',
+		'Ne obra se bostan dok sljive ne popadaju',
+		CURRENT_TIMESTAMP
+	)
