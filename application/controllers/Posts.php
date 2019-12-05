@@ -19,8 +19,9 @@ class Posts extends CI_Controller {
 		}
 		$data['title'] = $data['post']['title'];
 		print_r($data['title']);
+		print_r($data);
 		$this->load->view('templates/header');
-		$this->load->view('posts/view/', $data);
+		$this->load->view('posts/view', $data);
 		$this->load->view('templates/footer');
 	}
 
