@@ -46,7 +46,9 @@ class Posts extends CI_Controller {
 	}
 
 	public function delete($id) {
-		echo $id; // we're checking if the parameter is received correctly
+		// echo $id; // we're checking if the parameter is received correctly
+		$this->post_model->delete_post($id);
+		redirect('posts');
 	}
 
 }
