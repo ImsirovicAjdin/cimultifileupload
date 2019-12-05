@@ -23,6 +23,13 @@
 				<a class="nav-link" href="<?php echo base_url(); ?>posts">Posts</a>
 			</li>			
 		</ul>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item ml-auto">
+				<a class="nav-link" href="http://localhost/ciblog/posts/create">
+					Create Post
+				</a>
+			</li>
+		</ul>		
 	</div>
 </nav>
 
