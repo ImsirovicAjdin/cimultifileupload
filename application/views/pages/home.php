@@ -1,1 +1,1 @@
-<h1 style="padding-top: 20px">This is pages/home</h1>
+<h1 style="padding-top: 20px"><?= $title ?></h1>
