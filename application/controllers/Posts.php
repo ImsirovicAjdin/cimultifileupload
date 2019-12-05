@@ -39,7 +39,7 @@ class Posts extends CI_Controller {
 			$this->load->view('templates/footer');
 		}else{
 			$this->post_model->create_post();
-			$this->load->view('posts/success');
+			// $this->load->view('posts/success');
 			redirect('posts');
 		}
 
