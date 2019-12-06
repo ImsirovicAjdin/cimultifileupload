@@ -1,0 +1,65 @@
+b2481e2 Update navbar nav-items to include the create posts link
+910817d Complete the posts_update() functionality
+e65762e Update model and controller and edit with update_post()
+ddad05c Re-route edit to form_open posts/update
+33d4d94 Update edit.php so taht it is not so easy to submit empty values
+95b8aba Add Edit link to views/posts/view.php
+26998b0 Improve the posts/view V
+9da256b Fix typo
+120ebf4 Improve the forms on create post view
+c65028f Update the edit MVC so that a post can be edited
+aab22eb Improve explanations
+2cec096 Explain what the create_post() action in the Post_model does
+7926b97 Update delete action of Posts CTRL: call post_model->delete_post($id)
+8b17909 Add delete action to Posts controller, check if we're getting the correct $id param
+43ae133 Add [delete] button on single post view
+35356bf This is an example of an active record entry
+8747100 Update get_posts action of the Post_model: sort posts DESC
+5a393c3 Remove the call to posts/success.php which was trying to get loadded after the call to create_post()
+74a5a44 Add create_post ACTION to Post_model
+78863e4 If adding new post to db is successful, redirect to 'posts/index'
+34e71ea Fix duplicate call to header and footer in Posts CTRL, create Action
+0923b0e Update create action in Posts CTRL to call the post_model/create_post if validation passes
+7f3cf21 Autoload 'form_validation' library
+fa501f9 Add create action to Posts controller
+61b3a4b Add views/posts/create.php VIEW
+77bd9e7 Add $route for 'posts/create'
+4b0803b Autoload 'form' helper
+730d8ba Revert to $posts variable
+3c288b7 How does the $data variable behave?
+5234f2a Load posts/view ACTION into view
+65ac495 Add view action to Posts controller; call post_model->get_posts($slug); and if it returns, load it into view
+407b2f4 Add new view: views/posts/view.php, add comment to views/posts/index.php
+bf26b2d Set $route posts/:any to posts/view/$1
+c8a2aee Add 'Read more' button that has the $slug echoed out in the anchor tag
+807acf9 Run foreach loop on all posts, show post title, post created_at (in a badge), post body
+209f61e Comment out the print_r in Posts controller
+c7fdd02 print_r the ($data['posts']) array - it will show above the navbar
+3856dce Delete the file that was added by accident
+cee6236 Call the post_model->get_posts() from the Posts.php controller
+13f0cd6 Add get_posts action to post_model
+5d7d57d Add database for multifileupload
+1103ff0 Setup config/database.php to access `multifileupload` database
+028b1b7 Explanation of how is the data passed from the controller to the view
+99c8e63 Now the posts link loads, just like the rest of the site
+ecf5e4b Add Post_model
+be5002a Add Posts.php controller
+bdf8814 Add link to 'posts' in navbar
+fe8f6e5 Add views/posts/index.php and load $title inside of it
+a0ce4c1 Add posts route
+33d94ba Autoload post_model
+c44e8d5 Update the about.php page with dynamic $data['title'] variable
+3974314 Add container to header/footer templates to surround the {{content}}
+fc093ce Add base_url() to navbar brand so it leads to project root instead of xampp page
+02f6834 Add bootstrap CDN and navbar to views/templates/header.php
+4bcba72 Add $title $data variable to views/pages/home.php
+3356530 Add image for previous commit
+dc426ee Add the application/views/pages/about.php page
+c61841f Add any pages/view route to pages/view/$1
+bef449f After adding views/pages/home.php and views/templates/header.php and footer.php
+d97ab4c Add views/pages/home.php, views/templates/header.php and vies/templates/footer.php
+0c5ad89 Add Controller: Pages, view action
+ce38dfa Add pages/view as the defautl route
+7b75f8e Autoload 'url' helper
+ee74715 Add .htaccess
+9e569f5 Install CI
